@@ -1,8 +1,25 @@
 const Item = require("../models/item");
+const Brand = require("../models/brand");
+const Category = require("../models/category");
+const ItemInstance = require("../models/itemInstance");
 const asyncHandler = require("express-async-handler");
 
 exports.index = asyncHandler(async (req, res, next) => {
-  res.send("NOT IMPLEMENTED: Site Home Page");
+  const [numItems, numItemInstances, numBrands, numCategories] =
+    await Promise.all([
+      Item.countDocuments({}).exec(),
+      ItemInstance.countDocuments({}).exec(),
+      Brand.countDocuments({}).exec(),
+      Category.countDocuments({}).exec(),
+    ]);
+
+  res.render("index", {
+    title: "Tennis Racket Stock Home",
+    item_count: numItems,
+    item_instance_count: numItemInstances,
+    brand_count: numBrands,
+    categories_count: numCategories,
+  });
 });
 
 // Display list of all items.

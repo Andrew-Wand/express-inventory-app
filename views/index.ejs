@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <%- include('layout') -%>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+
+  <p>Here are the current offerings of our Tennis Racket stock:</p>
+
+  <ul>
+    <li>
+      <strong>
+        Tennis Rackets:
+      </strong>
+      <%= item_count %>
+    </li>
+    <li>
+      <strong>
+        Tennis Racket instance count:
+      </strong>
+      <%= item_instance_count %>
+    </li>
+    <li>
+      <strong>
+        Number of Brands:
+      </strong>
+      <%= brand_count %>
+    </li>
+    <li>
+      <strong>
+        Number of Categories:
+      </strong>
+      <%= categories_count %>
+    </li>
+    
+  </ul>
+</body>
+
 </html>
