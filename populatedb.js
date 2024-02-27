@@ -140,6 +140,190 @@ async function createItems() {
       [brands[0]],
       159.95
     ),
+    itemCreate(
+      1,
+      "Wilson Blade 101L V9.0",
+      "Wilson Blade 101L V9.0 ",
+      [categories[0]],
+      [brands[0]],
+      169.95
+    ),
+    itemCreate(
+      2,
+      "Wilson Ultra Power 100",
+      "Wilson Ultra Power 100 ",
+      [categories[0]],
+      [brands[0]],
+      169.95
+    ),
+    itemCreate(
+      3,
+      "Head Graphene Touch Instinct",
+      "Head Graphene Touch Instinct ",
+      [categories[0]],
+      [brands[1]],
+      109.95
+    ),
+    itemCreate(
+      4,
+      "Head Graphene Touch Speed Elite",
+      "Head Graphene Touch Speed Elite ",
+      [categories[0]],
+      [brands[1]],
+      109.95
+    ),
+    itemCreate(
+      5,
+      "Head Prestige Classic 2.0",
+      "Head Prestige Classic 2.0 ",
+      [categories[0]],
+      [brands[1]],
+      269.95
+    ),
+    itemCreate(
+      6,
+      "Babolat Boost S",
+      "Babolat Boost S ",
+      [categories[0]],
+      [brands[2]],
+      79.95
+    ),
+    itemCreate(
+      7,
+      "Babolat Pure Strike 100",
+      "Babolat Pure Strike 100 ",
+      [categories[0]],
+      [brands[2]],
+      259.95
+    ),
+    itemCreate(
+      8,
+      "Babolat Pure Drive 98",
+      "Babolat Pure Drive 98 ",
+      [categories[0]],
+      [brands[2]],
+      179.95
+    ),
+    itemCreate(
+      9,
+      "Prince Warrior 100 TeXtreme",
+      "Prince Warrior 100 TeXtreme ",
+      [categories[0]],
+      [brands[3]],
+      99.95
+    ),
+    itemCreate(
+      10,
+      "Prince Spark 280",
+      "Prince Spark 280 ",
+      [categories[0]],
+      [brands[3]],
+      134.95
+    ),
+    itemCreate(
+      11,
+      "Prince ATS Tour 100 310 Gr.",
+      "The Prince Tour 100 310Gr. is from the collection of Prince. This collection is versatile and consists of user-friendly rackets with lots of choice in weight. So you can determine which racket suits you best.This racket weighs 310 grams and has the balance point at 310 mm. The racket has a blade size of 645 cm2.Applied technologiesThe Prince Tour series is characterized by its balance of features. It borrows some of the control of the Phantom series and mixes it with the power and spin of the Beast series. The Tour models benefit from TeXtreme and Twaron technology, which provides more stability in the strings' vibrations. ",
+      [categories[0]],
+      [brands[3]],
+      139.95
+    ),
+    itemCreate(
+      12,
+      "Wilson Ultra Power Junior 25",
+      "Wilson Ultra Power Junior 25",
+      [categories[1]],
+      [brands[0]],
+      49.95
+    ),
+    itemCreate(
+      13,
+      "Wilson Pro Staff Precision Junior 21",
+      "Wilson Pro Staff Precision Junior 21",
+      [categories[1]],
+      [brands[0]],
+      38.95
+    ),
+    itemCreate(
+      14,
+      "Wilson Blade 25 V8.0 Junior",
+      "Wilson Blade 25 V8.0 Junior",
+      [categories[1]],
+      [brands[0]],
+      89.95
+    ),
+    itemCreate(
+      15,
+      "Head Radical Junior 19",
+      "Head Radical Junior 19",
+      [categories[1]],
+      [brands[1]],
+      29.95
+    ),
+    itemCreate(
+      16,
+      "Head Coco Junior 25",
+      "Head Coco Junior 25",
+      [categories[1]],
+      [brands[1]],
+      24.95
+    ),
+    itemCreate(
+      17,
+      "Head Radical Junior",
+      "Head Radical Junior",
+      [categories[1]],
+      [brands[1]],
+      107.95
+    ),
+    itemCreate(
+      18,
+      "Babolat Pure Strike Junior 26",
+      "Babolat Pure Strike Junior 26",
+      [categories[1]],
+      [brands[2]],
+      120.0
+    ),
+    itemCreate(
+      19,
+      "Babolat Junior 21 Wimbledon",
+      "Babolat Junior 21 Wimbledon",
+      [categories[1]],
+      [brands[2]],
+      27.95
+    ),
+    itemCreate(
+      20,
+      "Babolat Drive Junior 23 Meisjes",
+      "Babolat Drive Junior 23 Meisjes",
+      [categories[1]],
+      [brands[2]],
+      44.95
+    ),
+    itemCreate(
+      21,
+      "Prince Ace/Face Junior 19",
+      "Prince Ace/Face Junior 19",
+      [categories[1]],
+      [brands[3]],
+      19.95
+    ),
+    itemCreate(
+      22,
+      "Prince Ace/Face Junior 21",
+      "Prince Ace/Face Junior 21",
+      [categories[1]],
+      [brands[3]],
+      19.95
+    ),
+    itemCreate(
+      23,
+      "Prince Ace/Face Junior 21",
+      "Prince Ace/Face Junior 21",
+      [categories[1]],
+      [brands[3]],
+      19.95
+    ),
   ]);
 }
 // async function createItems() {
@@ -206,7 +390,32 @@ async function createItems() {
 
 async function createItemInstances() {
   console.log("Adding item instances");
-  await Promise.all([itemInstanceCreate(0, items[0], 14)]);
+  await Promise.all([
+    itemInstanceCreate(0, items[0], 14),
+    itemInstanceCreate(1, items[1], 2),
+    itemInstanceCreate(2, items[2], 6),
+    itemInstanceCreate(3, items[3], 7),
+    itemInstanceCreate(4, items[4], 24),
+    itemInstanceCreate(5, items[5], 10),
+    itemInstanceCreate(6, items[6], 0),
+    itemInstanceCreate(7, items[7], 3),
+    itemInstanceCreate(8, items[8], 20),
+    itemInstanceCreate(9, items[9], 2),
+    itemInstanceCreate(10, items[10], 5),
+    itemInstanceCreate(11, items[11], 8),
+    itemInstanceCreate(12, items[12], 14),
+    itemInstanceCreate(13, items[13], 2),
+    itemInstanceCreate(14, items[14], 6),
+    itemInstanceCreate(15, items[15], 8),
+    itemInstanceCreate(16, items[16], 22),
+    itemInstanceCreate(17, items[17], 5),
+    itemInstanceCreate(18, items[18], 9),
+    itemInstanceCreate(19, items[19], 7),
+    itemInstanceCreate(20, items[20], 1),
+    itemInstanceCreate(21, items[21], 0),
+    itemInstanceCreate(22, items[22], 6),
+    itemInstanceCreate(23, items[23], 2),
+  ]);
 }
 // async function createItemInstances() {
 //   console.log("Adding item instances");
