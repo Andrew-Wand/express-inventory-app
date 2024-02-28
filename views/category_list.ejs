@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title><%= title %></title>
+        <meta lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <%- include('layout') -%>
+        <h1><%= title %></h1>
+        <% if (category_list.length) { %>
+            <ul>
+                <% category_list.forEach(category => { %>
+                    <li>
+                        <a href="<%= category.url %>"><%= category.name %></a>
+            
+                    </li>
+                <% }) %>
+                <% } else { %>
+                    <li>There are no categories.</li>
+            </ul>
+        <% } %>
+    
+      
+         
+    </body>
+    </html>
